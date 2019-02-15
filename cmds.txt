@@ -1,3 +1,5 @@
 consul agent -server -bootstrap-expect=1 -data-dir=cpnsul-data -ui -bind=172.22.24.225
 
 docker run -h 192.168.99.100 -p 8088:8088 -t my-repo/boaexample --name my-repo-image:latest
+
+docker run --name boadb -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=boadb -e 
